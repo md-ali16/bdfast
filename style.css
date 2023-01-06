@@ -1,0 +1,246 @@
+/* common css */
+img {
+    max-width: 100%;
+}
+
+body a {
+    text-decoration: none;
+}
+
+.row {
+    width: 100% !important;
+    padding: 0;
+}
+
+/* left side css */
+.left-side {
+    height: 100vh;
+    background: #fefefe;
+    border-right: 5px solid #00000020;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* left top area css */
+.left-top-area {
+    background: linear-gradient(0deg, #4178d0, #105cd485);
+}
+
+.left-top-area img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 4px;
+    border: dashed 2px #fff;
+}
+
+.left-top-area h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* nav link css */
+.nav-pills {
+    width: 100%;
+}
+
+.nav-link {
+    display: block !important;
+    color: rgb(61, 60, 60);
+    margin-bottom: 12px;
+    border-radius: 0 !important;
+}
+
+.nav-link span {
+    font-size: 17px;
+}
+
+.nav-link i {
+    color: #3b82f6;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    background: #f3f4f6;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: rgb(61, 60, 60);
+    background: #f3f4f6 !important;
+    border-left: 5px solid #085adf !important;
+}
+
+.fa {
+    display: none;
+}
+
+/* right-top css */
+.right-sidebar {
+    background-color: #fff;
+}
+
+.right-top {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Deshboard content css */
+.title-bar {
+    transform: translateX(-41px) translateY(0px);
+    width: 200px;
+    padding: 10px;
+    background: #487dd3;
+    color: white;
+    border-radius: 0% 4% 60% 0%;
+    z-index: 0;
+}
+
+.replec-apply-form {
+    display: none;
+}
+
+.new-apply-form {
+    display: none;
+
+}
+
+/* profile css */
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px 0px 20px 0;
+    border-top: 5px solid #085adf;
+    border-right: 5px solid #085adf;
+}
+
+/* village area css */
+.village input::placeholder {
+    font-size: 15px;
+}
+
+/* -----------
+ Media CSS
+ ------------*/
+@media (max-width:991px) {
+    .left-side {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        top: 40px;
+        background: linear-gradient(0deg, #4178d0, #105cd485);
+        padding: 10px 20px !important;
+    }
+
+    .left-top-area {
+        /* flex-basis: 40%; */
+        background: transparent;
+        padding: 0 !important;
+    }
+
+    .left-top-area img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .left-top-area h4 {
+        display: none;
+    }
+
+    .left-bottom-area {
+        /* flex-basis: 60%; */
+        margin-top: 0 !important;
+        position: relative;
+    }
+
+    .nav-link {
+        color: #fff !important;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: rgb(61, 60, 60) !important;
+    }
+
+    .nav-link i {
+        color: rgb(8, 5, 5) !important;
+    }
+
+    .nav-pills {
+        position: absolute;
+        top: 61px;
+        right: -24px;
+        width: 200px;
+        padding: 50px 0;
+        background-color: #105cd4;
+    }
+
+    #menuLicks {
+        position: absolute;
+        top: 50px;
+        right: -20px;
+        background: linear-gradient(45deg, #00968880, #009688);
+        width: 300px;
+        height: 100vh;
+        transform: scaleY(0);
+        transition: 1s;
+        z-index: 2;
+    }
+
+    .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #hideIcon {
+        display: none;
+    }
+
+    .right-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 70;
+        width: 100%;
+        height: 40px;
+    }
+
+    .right-sidebar {
+        margin-top: 40px;
+        padding-right: 0 !important;
+    }
+
+    .profile-content {
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .village {
+        width: 100% !important;
+        margin-top: 50px !important;
+    }
+}
+
+@media (max-width:767px) {
+    .profile-content {
+        width: 100% !important;
+    }
+
+    .padding-none {
+        padding: 0px 5px !important;
+    }
+
+    /* 
+    .btn-md {
+        width: 40% !important;
+    } */
+}
