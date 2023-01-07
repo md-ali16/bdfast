@@ -1,4 +1,10 @@
 /* common css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 img {
     max-width: 100%;
 }
@@ -15,6 +21,12 @@ body a {
 .Tc {
     text-align: center;
 }
+
+
+
+/* -------------
+Index Page css  
+--------------*/
 
 /* left side css */
 .left-side {
@@ -133,10 +145,221 @@ body a {
     font-size: 15px;
 }
 
+.form-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    gap: 0 5%;
+}
+
+/* -------------
+Index Page css end 
+--------------*/
+
+/* -------------
+Login Page css  
+--------------*/
+.full-page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.login {
+    width: 40%;
+    position: relative;
+    top: 50%;
+    left: 20%;
+    transform: translateX(-20%) translateY(-50%);
+    text-align: center;
+}
+
+.login h1 {
+    font-size: 35px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 50px;
+
+}
+
+.login input {
+    width: 75%;
+    padding: 15px 11px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #dbe8ea;
+    border-radius: 5px;
+}
+
+.login input::placeholder {
+    font-size: 15px;
+    color: #666;
+}
+
+.label {
+    margin: auto;
+    width: 75%;
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.label .forgat-pass {
+    font-size: 14px;
+    font-weight: bold;
+    color: #105cd4;
+}
+
+.login .login-btn {
+    padding: 10px 19px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+    width: 75%;
+    border-radius: 7px;
+    background: #4502a5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #250256;
+}
+
+#sing-up {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(0deg, #0a1cd9cf, #1029d485), url(images/loginbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.signup-btn-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.signup-btn-area h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.signup-btn-area h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f0fff6;
+    margin: 10px 0;
+}
+
+.signup-btn-area button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #100359;
+    background: #fff;
+    border: 3px solid #fff;
+    box-shadow: 0px 2px 3px #fff;
+    transition: .3s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.signup-btn-area button:hover {
+    background: transparent;
+    color: #fff;
+
+}
+
+#signup-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+    box-shadow: 0px 0px 9px #2d2929a6;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color: #f0f3fe;
+    display: none;
+}
+
+#signup-form input {
+    width: 100%;
+    padding: 15px 11px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #dbe8ea;
+    border-radius: 5px;
+}
+
+#signup-form .label {
+    color: rgb(1, 4, 92);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    width: 100% !important;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 0 8%;
+}
+
+
+.signup-btn {
+    padding: 10px 45px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #4502a5;
+    background: #4502a5;
+    color: #fff;
+    border-radius: 10px;
+    transform: translateX(50%);
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #27015b;
+}
+
+/* -------------
+Login Page css  end
+--------------*/
+
+
 /* -----------
- Media CSS
+ Css For Resposive Layout
  ------------*/
 @media (max-width:991px) {
+    .form-grid label {
+        font-size: 15px;
+    }
+
+    #signup-form {
+        width: 75%;
+    }
+
+    .signup-btn-area h1 {
+        font-size: 22px;
+    }
+
+    .signup-btn-area h2 {
+        font-size: 20px;
+    }
+
     .left-side {
         display: flex;
         justify-content: space-between;
@@ -191,11 +414,10 @@ body a {
 
     #menuLicks {
         position: absolute;
-        top: 50px;
-        right: -20px;
-        background: linear-gradient(45deg, #00968880, #009688);
+        top: 60px;
+        right: -25px;
+        background: linear-gradient(0deg, #4178d0, #105cd485);
         width: 300px;
-        height: 100vh;
         transform: scaleY(0);
         transition: 1s;
         z-index: 2;
@@ -239,6 +461,43 @@ body a {
 }
 
 @media (max-width:767px) {
+    .login {
+        width: 75%;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-20%);
+    }
+
+    .login h1 {
+        font-size: 28px;
+    }
+
+    .form-grid label {
+        font-size: 11px;
+    }
+
+    .form-grid input::placeholder {
+        font-size: 10px;
+    }
+
+    #sing-up {
+        width: 100%;
+        height: 40%;
+        position: relative;
+        bottom: -120px;
+        left: 0;
+    }
+
+
+
+    #signup-form {
+        width: 90%;
+    }
+
+    .title-bar {
+        transform: translateX(5px);
+    }
+
     .profile-content {
         width: 100% !important;
     }
@@ -272,15 +531,15 @@ body a {
         padding-left: 20px;
     }
 
-    .village-table th {
+    th {
         font-size: 8px;
     }
 
-    .village-table td {
+    td {
         font-size: 10px;
     }
 
-    .village-table td a {
+    td a {
         font-size: 10px !important;
     }
 }
