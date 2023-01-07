@@ -23,139 +23,6 @@ body a {
 }
 
 
-
-/* -------------
-Index Page css  
---------------*/
-
-/* left side css */
-.left-side {
-    height: 100vh;
-    background: #fefefe;
-    border-right: 5px solid #00000020;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-/* left top area css */
-.left-top-area {
-    background: linear-gradient(0deg, #4178d0, #105cd485);
-}
-
-.left-top-area img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    padding: 4px;
-    border: dashed 2px #fff;
-}
-
-.left-top-area h4 {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-/* nav link css */
-.nav-pills {
-    width: 100%;
-}
-
-.nav-link {
-    display: block !important;
-    color: rgb(61, 60, 60);
-    margin-bottom: 12px;
-    border-radius: 0 !important;
-}
-
-.nav-link span {
-    font-size: 17px;
-}
-
-.nav-link i {
-    color: #3b82f6;
-    font-size: 20px;
-}
-
-.nav-link:hover {
-    background: #f3f4f6;
-}
-
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    color: rgb(61, 60, 60);
-    background: #f3f4f6 !important;
-    border-left: 5px solid #085adf !important;
-}
-
-.fa {
-    display: none;
-}
-
-/* right-top css */
-.right-sidebar {
-    background-color: #fff;
-}
-
-.right-top {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.tab-content {
-    padding-left: 50px;
-}
-
-/* Deshboard content css */
-.title-bar {
-    transform: translateX(-41px) translateY(0px);
-    width: 200px;
-    padding: 10px;
-    background: #487dd3;
-    color: white;
-    border-radius: 0% 4% 60% 0%;
-    z-index: 0;
-}
-
-.replec-apply-form {
-    display: none;
-}
-
-.new-apply-form {
-    display: none;
-
-}
-
-/* profile css */
-.img {
-    width: 150px;
-    height: 150px;
-    border-radius: 20px 0px 20px 0;
-    border-top: 5px solid #085adf;
-    border-right: 5px solid #085adf;
-}
-
-/* village area css */
-.village input::placeholder {
-    font-size: 15px;
-}
-
-.form-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 47% 47%;
-    gap: 0 5%;
-}
-
-/* -------------
-Index Page css end 
---------------*/
-
 /* -------------
 Login Page css  
 --------------*/
@@ -340,13 +207,149 @@ Login Page css  end
 --------------*/
 
 
+/* -------------
+Index Page css  
+--------------*/
+
+/* left side css */
+.left-side {
+    height: 100vh;
+    background: #fefefe;
+    border-right: 5px solid #00000020;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* left top area css */
+.left-top-area {
+    background: linear-gradient(0deg, #4178d0, #105cd485);
+}
+
+.left-top-area img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 4px;
+    border: dashed 2px #fff;
+}
+
+.left-top-area h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* nav link css */
+.nav-pills {
+    width: 100%;
+}
+
+.nav-link {
+    display: block !important;
+    color: rgb(61, 60, 60);
+    margin-bottom: 12px;
+    border-radius: 0 !important;
+}
+
+.nav-link span {
+    font-size: 17px;
+}
+
+.nav-link i {
+    color: #3b82f6;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    background: #f3f4f6;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: rgb(61, 60, 60);
+    background: #f3f4f6 !important;
+    border-left: 5px solid #085adf !important;
+}
+
+.fa {
+    display: none;
+}
+
+/* right-top css */
+.right-sidebar {
+    background-color: #fff;
+}
+
+.right-top {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.tab-content {
+    padding-left: 50px;
+}
+
+/* Deshboard content css */
+.title-bar {
+    transform: translateX(-41px) translateY(0px);
+    width: 200px;
+    padding: 10px;
+    background: #487dd3;
+    color: white;
+    border-radius: 0% 4% 60% 0%;
+    z-index: 0;
+}
+
+.replec-apply-form {
+    display: none;
+}
+
+.new-apply-form {
+    display: none;
+
+}
+
+/* profile css */
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px 0px 20px 0;
+    border-top: 5px solid #085adf;
+    border-right: 5px solid #085adf;
+}
+
+/* village area css */
+.village input::placeholder {
+    font-size: 15px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    gap: 0 5%;
+    width: 100%;
+}
+
+/* -------------
+Index Page css end 
+--------------*/
+
+
+
+
 /* -----------
  Css For Resposive Layout
  ------------*/
 @media (max-width:991px) {
-    .form-grid label {
-        font-size: 15px;
+    .form-grid {
+        grid-template-columns: 90%;
     }
+
 
     #signup-form {
         width: 75%;
@@ -470,14 +473,6 @@ Login Page css  end
 
     .login h1 {
         font-size: 28px;
-    }
-
-    .form-grid label {
-        font-size: 11px;
-    }
-
-    .form-grid input::placeholder {
-        font-size: 10px;
     }
 
     #sing-up {
