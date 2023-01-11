@@ -12,24 +12,30 @@
 <body>
     <!-- Login page  -->
     <section class="full-page">
-        <!-- login form area  -->
-        <div class="login">
-            <h1>BD FAST এ <br> <span style="color: rgb(3, 3, 88);">আপনাকে স্বাগতম</span></h1>
-            <form>
-                <label class="label"><span class="label-text">মোবাইল</span></label>
-                <input type="text" placeholder="মোবাইল লিখুন">
-                <label class="label"><span class="label-text">পিন</span></label>
-                <input type="password" placeholder="পিন লিখুন">
-                <label class="label">
-                    <a href="" class="forgat-pass">পাসওয়ার্ড ভুলে গেছেন?</a>
-                </label>
-                <button class="login-btn">লগইন</button>
-            </form>
+        <div class="side-img">
+            <img style="width: 400px;" src="images/login-side.png" alt="">
         </div>
-        <!-- login form area end -->
+        <div>
+            <!-- login form area  -->
+            <div id="login-form" class="login">
+                <h1>BD FAST এ <br> <span style="color: rgb(3, 3, 88);">আপনাকে স্বাগতম</span></h1>
+                <form>
+                    <h4>লগইন করুন</h4>
+                    <label class="label"><span class="label-text">মোবাইল</span></label>
+                    <input type="text" placeholder="মোবাইল লিখুন">
+                    <label class="label"><span class="label-text">পিন</span></label>
+                    <input type="password" placeholder="পিন লিখুন">
+                    <label class="label">
+                        <a href="" class="forgat-pass">পাসওয়ার্ড ভুলে গেছেন?</a>
+                    </label>
+                    <button class="login-btn">লগইন</button>
+                    <h5>একাউন্ট নেই?<span style="cursor: pointer; color: rgb(5, 5, 149);"
+                            onclick="showSignupFrom()">রেজিস্টার করুন</span></h5>
+                </form>
+            </div>
+            <!-- login form area end -->
 
-        <!-- Sign up area  -->
-        <div id="sing-up">
+
             <!-- sign up form  -->
             <div id="signup-form">
                 <h2 style="color: #4502a5;margin-bottom: 30px;">রেজিস্ট্রার</h2>
@@ -73,39 +79,19 @@
                 </form>
             </div>
             <!-- sign up form end -->
-
-            <!-- sign button -->
-            <div id="dd" class="signup-btn-area">
-                <h1>একাউন্ট নাই?</h1>
-                <h2>রেজিস্টেশন করুন</h2>
-                <button onclick="showSignupFrom()">রেজিস্ট্রার</button>
-            </div>
-            <!-- sign button end -->
         </div>
-        <!-- Sign up area end -->
+
+
     </section>
     <!-- Login page End -->
 
     <script>
-        const signupArea = document.getElementById('sing-up');
-        const signupBtnArea = document.getElementById('dd');
         const signupForm = document.getElementById('signup-form');
+        const loginForm = document.getElementById('login-form');
         function showSignupFrom() {
-
-            signupArea.style.width = '100%';
-            signupArea.style.transition = '.3s';
-            signupArea.style.transitionDuration = '1s';
-
-            const x = window.matchMedia("(max-width:767px)");
-            if (x.matches) {
-                signupArea.style.height = '100%';
-                signupArea.style.transition = '.3s';
-                signupArea.style.transitionDuration = '1s';
-                signupArea.style.bottom = '60%';
-            }
-
-            signupBtnArea.style.display = 'none';
-            signupForm.style.display = 'block'
+            signupForm.style.display = 'block';
+            loginForm.style.display = 'none';
+            loginForm.style.background = 'red';
         }
     </script>
 </body>

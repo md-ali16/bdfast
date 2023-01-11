@@ -81,7 +81,7 @@
                 <div class="col-lg-10 p-0 right-sidebar">
                     <div style="background: #111;" class="right-top d-flex justify-content-between py-2 px-3">
                         <h5 style="color: #fff;"><b>বিডি ফাস্ট</b></h5>
-                        <span style="color: #fafafa; cursor: pointer;">লগ আউট</span>
+                        <span style="color: #fafafa; cursor: pointer;"><a href="login.html">লগ আউট</a></span>
                     </div>
                     <div class="tab-content py-4" id="v-pills-tabContent">
 
@@ -187,7 +187,7 @@
                                             <button id="new-apply-btn" style="color: red;" class="btn fw-bolder">নতুন
                                                 আবেদন</button>
 
-                                            <div id="new-form" class="new-apply-form">
+                                            <div id="new-apply-form" class="">
                                                 <h6 class="fw-bolder mt-4">জন্ম নিবন্ধন আবেদন</h6>
                                                 <form class=" mt-2 form-grid">
 
@@ -300,23 +300,32 @@
                                             </div>
                                         </div>
                                         <div class="col-md-5">
+
                                             <button id="old-apply-btn" style="color: red;" class="btn fw-bolder">সংশোধন
                                                 আবেদন</button>
 
-                                            <form id="replec" class="replec-apply-form mt-5">
-                                                <h6 class="fw-bolder mb-3">জন্ম নিবন্ধন সংশোধন আবেদন</h6>
-                                                <label for="staticEmail2" class="mb-1">জন্ম নিবন্ধন নম্বর <span
-                                                        style="color: red;">*</span></label>
-                                                <input style="border: 2px solid #0c3899;"
-                                                    placeholder="জন্ম নিবন্ধন নম্বর লিখুন" type="text"
-                                                    class="form-control mb-3 w-75" required>
-                                                <label for="staticEmail2" class="mb-1">জন্ম তারিখ<span
-                                                        style="color: red;">*</span></label>
-                                                <input style="border: 2px solid #0c3899;" placeholder="দিন-মাস-বছর"
-                                                    type="text" class="form-control mb-3 w-75" required>
-                                                <button style="background: #0044a4;color: #fff;"
-                                                    class="btn">অনুসন্ধান</button>
-                                            </form>
+                                            <div id="replec-apply">
+                                                <h6 class="fw-bolder mt-4">জন্ম নিবন্ধন সংশোধন আবেদন</h6>
+                                                <form class="form-grid mt-3">
+
+                                                    <div>
+                                                        <label for="staticEmail2" class="mb-1">জন্ম নিবন্ধন নম্বর <span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="জন্ম নিবন্ধন নম্বর লিখুন" type="text"
+                                                            class="form-control mb-3" required>
+                                                    </div>
+                                                    <div>
+                                                        <label for="staticEmail2" class="mb-1">জন্ম তারিখ<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="দিন-মাস-বছর" type="text"
+                                                            class="form-control mb-3 " required>
+                                                    </div>
+                                                    <button style="background: #0044a4;color: #fff;"
+                                                        class="btn">অনুসন্ধান</button>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -435,7 +444,7 @@
                                                 <label for="staticEmail2" class="">গ্রামের নাম (বাংলায়)<span
                                                         style="color: red;">*</span></label>
                                                 <input style="border: 2px solid #0c3899;"
-                                                    placeholder="গ্রামের নাম (বাংলায়) লিখুন" type="text"
+                                                    placeholder="গ্রামের নাম বাংলায় লিখুন" type="text"
                                                     class="form-control mb-3" required>
                                             </div>
 
@@ -444,7 +453,7 @@
                                                     গ্রামের নাম (ইংরেজি)
                                                     <span style="color: red;">*</span></label>
                                                 <input style="border: 2px solid #0c3899;"
-                                                    placeholder="গ্রামের নাম (ইংরেজিতে) লিখুন" type="text"
+                                                    placeholder="গ্রামের নাম ইংরেজিতে লিখুন" type="text"
                                                     class="form-control mb-3" required>
                                             </div>
 
@@ -453,7 +462,7 @@
                                                         style="color: red;">*</span>
                                                 </label>
                                                 <input style="border: 2px solid #0c3899;"
-                                                    placeholder="ডাকঘরের নাম (বাংলায়) লিখুন" type="text"
+                                                    placeholder="ডাকঘরের নাম বাংলায় লিখুন" type="text"
                                                     class="form-control mb-3" required>
                                             </div>
 
@@ -462,7 +471,7 @@
                                                 <label for="staticEmail2">ডাকঘরের নাম (ইংরেজি)<span
                                                         style="color: red;">*</span></label>
                                                 <input style="border: 2px solid #0c3899;"
-                                                    placeholder="ডাকঘরের নাম (ইংরেজিতে) লিখুন" type="text"
+                                                    placeholder="ডাকঘরের নাম ইংরেজিতে লিখুন" type="text"
                                                     class="form-control mb-3" required>
                                             </div>
 
@@ -648,7 +657,7 @@
 
             document.getElementById('new-apply-btn').addEventListener('click', function () {
 
-                const oldFormFiled = document.getElementById('replec');
+                const oldFormFiled = document.getElementById('replec-apply');
                 oldFormFiled.style.display = 'none';
                 const x = window.matchMedia("(max-width: 767px)")
                 if (x.matches) {
@@ -656,16 +665,14 @@
                     replecBtn.style.display = 'none';
                 }
 
-                const newFormFiled = document.getElementById('new-form');
+                const newFormFiled = document.getElementById('new-apply-form');
                 newFormFiled.style.display = 'block'
-                // newFormFiled.style.visibility = 'visible';
-                // newFormFiled.style.opacity = '1';
             })
             document.getElementById('old-apply-btn').addEventListener('click', function () {
-                const newFormFiled = document.getElementById('new-form');
+                const newFormFiled = document.getElementById('new-apply-form');
                 newFormFiled.style.display = 'none';
 
-                const oldFormFiled = document.getElementById('replec');
+                const oldFormFiled = document.getElementById('replec-apply');
                 oldFormFiled.style.display = 'block';
             })
 
